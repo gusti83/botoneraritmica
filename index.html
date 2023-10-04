@@ -1,0 +1,122 @@
+<html>
+<head><link rel="stylesheet" href="./style.css">
+    <link rel="javascript" href="./main.js"></head>
+
+  <head>
+    <title>Botonera ritmica</title>
+  </head>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.36/Tone.js"></script>
+
+  <header>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.36/Tone.js"></script>
+  </header>
+  
+  <form name="myForm">
+    <div id="myForm">
+      Forma de onda: <select name="waveform">
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
+        <option value="sine">Sine</option>
+        <option value="sawtooth">Sawtooth</option>
+      </select>
+      Tempo: <select name="tempo">
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option>
+        <option value="100">100</option>
+        <option value="110">110</option>
+        <option value="120">120</option>
+        <option value="130">130</option>
+        <option value="140">140</option>
+      </select>
+      Volume: <select name="volume">
+        <option value="-30">-30</option>
+        <option value="-20">-20</option>
+        <option value="-10">-10</option>
+        <option value="-5">-5</option>
+        <option value="0">0</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </form>  
+  
+ <body>
+   <form name="botonera">
+     <div class="octava6">
+       <button id="C6" onclick="tocar('C6')"></button>
+       <button id="C#6" class="sharpbutton" onclick="tocar('C#6')"></button>
+       <button id="D6" onclick="tocar('D6')"></button>
+       <button id="D#6" class="sharpbutton" onclick="tocar('D#6')"></button>
+       <button id="E6" onclick="tocar('E6')"></button>
+       <button id="F6" onclick="tocar('F6')"></button>
+       <button id="F#6" class="sharpbutton" onclick="tocar('F#6')"></button>
+       <button id="G6" onclick="tocar('G6')"></button>
+       <button id="G#6" class="sharpbutton" onclick="tocar('G#6')"></button>
+       <button id="A6" onclick="tocar('A6')"></button>
+       <button id="A#6" class="sharpbutton" onclick="tocar('A#6')"></button>
+       <button id="B6" onclick="tocar('B6')"></button>
+     </div>
+     <div class="octava5">
+       <button id="C5" onclick="tocar('C5')"></button>
+       <button id="C#5" class="sharpbutton" onclick="tocar('C#5')"></button>
+       <button id="D5" onclick="tocar('D5')"></button>
+       <button id="D#5" class="sharpbutton" onclick="tocar('D#5')"></button>
+       <button id="E5" onclick="tocar('E5')"></button>
+       <button id="F5" onclick="tocar('F5')"></button>
+       <button id="F#5" class="sharpbutton" onclick="tocar('F#5')"></button>
+       <button id="G5" onclick="tocar('G5')"></button>
+       <button id="G#5" class="sharpbutton" onclick="tocar('G#5')"></button>
+       <button id="A5" onclick="tocar('A5')"></button>
+       <button id="A#5" class="sharpbutton" onclick="tocar('A#5')"></button>
+       <button id="B5" onclick="tocar('B5')"></button>
+     </div>
+     <div class="octava4">
+       <button id="C4" onclick="tocar('C4')"></button>
+       <button id="C#4" class="sharpbutton" onclick="tocar('C#4')"></button>
+       <button id="D4" onclick="tocar('D4')"></button>
+       <button id="D#4" class="sharpbutton" onclick="tocar('D#4')"></button>
+       <button id="E4" onclick="tocar('E4')"></button>
+       <button id="F4" onclick="tocar('F4')"></button>
+       <button id="F#4" class="sharpbutton" onclick="tocar('F#4')"></button>
+       <button id="G4" onclick="tocar('G4')"></button>
+       <button id="G#4" class="sharpbutton" class="sharpbutton" onclick="tocar('G#4')"></button>
+       <button id="A4" onclick="tocar('A4')"></button>
+       <button id="A#4" class="sharpbutton" onclick="tocar('A#4')"></button>
+       <button id="B4" onclick="tocar('B4')"></button>
+     </div>
+     <div class="octava3">
+       <button id="C3" onclick="tocar('C3')"></button>
+       <button id="C#3" class="sharpbutton" onclick="tocar('C#3')"></button>
+       <button id="D3" onclick="tocar('D3')"></button>
+       <button id="D#3" class="sharpbutton" onclick="tocar('D#3')"></button>
+       <button id="E3" onclick="tocar('E3')"></button>
+       <button id="F3" onclick="tocar('F3')"></button>
+       <button id="F#3" class="sharpbutton" onclick="tocar('F#3')"></button>
+       <button id="G3" onclick="tocar('G3')"></button>
+       <button id="G#3" class="sharpbutton" onclick="tocar('G#3')"></button>
+       <button id="A3" onclick="tocar('A3')"></button>
+       <button id="A#3" class="sharpbutton" onclick="tocar('A#3')"></button>
+       <button id="B3" onclick="tocar('B3')"></button>
+     </div>
+     <div class="octava2">
+       <button id="C2" onclick="tocar('C2')"></button>
+       <button id="C#2" class="sharpbutton" onclick="tocar('C#2')"></button>
+       <button id="D2" onclick="tocar('D2')"></button>
+       <button id="D#2" class="sharpbutton" onclick="tocar('D#2')"></button>
+       <button id="E2" onclick="tocar('E2')"></button>
+       <button id="F2" onclick="tocar('F2')"></button>
+       <button id="F#2" class="sharpbutton" onclick="tocar('F#2')"></button>
+       <button id="G2" onclick="tocar('G2')"></button>
+       <button id="G#2" class="sharpbutton" onclick="tocar('G#2')"></button>
+       <button id="A2" onclick="tocar('A2')"></button>
+       <button id="A#2" class="sharpbutton" onclick="tocar('A#2')"></button>
+       <button id="B2" onclick="tocar('B2')"></button>
+     </div>
+  </body>
+</html>
